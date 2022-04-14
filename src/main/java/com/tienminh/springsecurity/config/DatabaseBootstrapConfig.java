@@ -11,11 +11,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
 public class DatabaseBootstrapConfig {
-    @Autowired
-    PasswordEncoder passwordEncoder;
 
     @Bean
-    public CommandLineRunner bootstrapDB(UserRepo userRepo) {
+    public CommandLineRunner bootstrapDB(UserRepo userRepo, PasswordEncoder passwordEncoder) {
         return new CommandLineRunner() {
             @Override
             public void run(String... args) throws Exception {
