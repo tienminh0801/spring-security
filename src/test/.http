@@ -1,0 +1,36 @@
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "username" : "tienminh",
+  "password" : "password"
+}
+
+###
+GET http://localhost:5000/api/user
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0aWVubWluaCIsInJvbGVzIjpbIlJPTEVfTUFOQUdFUiIsIlJPTEVfQURNSU4iXSwiaWF0IjoxNjUwMzAzMjAzLCJpc3MiOiJUaWVuTWluaCIsImV4cCI6MTY1MDMwNTAwM30.95EQBK2QrI9bhHXXCV4KOsRhs65KnkRWag6sn8v1pb8lV88ezY6m3LAQx4a_vgRU
+
+###
+GET http://localhost:5000/api/refresh-token
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ0aWVubWluaCIsImlhdCI6MTY1MDMwMzIwMywiaXNzIjoiVGllbk1pbmgiLCJleHAiOjE2NTAzODk2MDN9.TKrkx0qx9C7PlbIBHk6UPrdwr6tMRELUVxquvb3CYz0qMMF_ayBS_yzAYBwkP4F0
+
+
+----------
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "username" : "hmt01",
+  "password" : "password"
+}
+
+###
+GET http://localhost:5000/api/user
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJobXQwMSIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE2NTAzMDAyNDMsImlzcyI6IlRpZW5NaW5oIiwiZXhwIjoxNjUwMzAyMDQzfQ.6EJTZm6Qmrt68aCTF7Clji0-OkqSJ9KKz7qRk4kiQ60IoovfueXNih1bKpx_myIj
+
+###
+GET http://localhost:5000/api/user/info
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJobXQwMSIsInJvbGVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE2NTAzMDAyNDMsImlzcyI6IlRpZW5NaW5oIiwiZXhwIjoxNjUwMzAyMDQzfQ.6EJTZm6Qmrt68aCTF7Clji0-OkqSJ9KKz7qRk4kiQ60IoovfueXNih1bKpx_myIj
+
+
