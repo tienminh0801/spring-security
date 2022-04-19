@@ -27,6 +27,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .addFilter(new JwtAuthenticationFilter(authenticationManager()))
                 .addFilterAfter(new VerifyJwtToken(),JwtAuthenticationFilter.class)
                 .authorizeRequests()
+                    .antMatchers("/api/refresh-token").permitAll()
                     .antMatchers("/api").hasRole("ADMIN")
 //                    .antMatchers(HttpMethod.GET,"/api/user/**").hasAnyRole("ADMIN","MANAGER")
                 .anyRequest().authenticated();
